@@ -1,0 +1,10 @@
+F:\MEKAGROUP\PruebasMEKAGROUP\PruebasMEKAGROUP\bin\Debug\PruebasMEKAGROUP.exe.config
+F:\MEKAGROUP\PruebasMEKAGROUP\PruebasMEKAGROUP\bin\Debug\PruebasMEKAGROUP.exe
+F:\MEKAGROUP\PruebasMEKAGROUP\PruebasMEKAGROUP\bin\Debug\PruebasMEKAGROUP.pdb
+F:\MEKAGROUP\PruebasMEKAGROUP\PruebasMEKAGROUP\obj\Debug\PruebasMEKAGROUP.csprojAssemblyReference.cache
+F:\MEKAGROUP\PruebasMEKAGROUP\PruebasMEKAGROUP\obj\Debug\PruebasMEKAGROUP.Form1.resources
+F:\MEKAGROUP\PruebasMEKAGROUP\PruebasMEKAGROUP\obj\Debug\PruebasMEKAGROUP.Properties.Resources.resources
+F:\MEKAGROUP\PruebasMEKAGROUP\PruebasMEKAGROUP\obj\Debug\PruebasMEKAGROUP.csproj.GenerateResource.cache
+F:\MEKAGROUP\PruebasMEKAGROUP\PruebasMEKAGROUP\obj\Debug\PruebasMEKAGROUP.csproj.CoreCompileInputs.cache
+F:\MEKAGROUP\PruebasMEKAGROUP\PruebasMEKAGROUP\obj\Debug\PruebasMEKAGROUP.exe
+F:\MEKAGROUP\PruebasMEKAGROUP\PruebasMEKAGROUP\obj\Debug\PruebasMEKAGROUP.pdb
