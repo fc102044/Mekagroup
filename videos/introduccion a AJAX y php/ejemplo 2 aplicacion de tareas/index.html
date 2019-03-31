@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>aplicacion de tareas</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <a href="#" class="navbar-brand"> Aplicacion de tareas</a>
+        <ul class="navbar-nav ml-auto">
+            <form class="form-inline my-2 my-lg-0">
+                <input type="search" id="Buscar" class="form-control mr-sm-2" placeholder="Buscar tarea">
+                <button class="btn btn-dark my-2 my-sm-0" type="submit">
+                    Buscar
+                </button>
+            </form>
+        </ul>
+    </nav>
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="formulariotareas">
+                        <input type="hidden" id="idimput">
+                            <div class="form-group">
+                                <input type="text" id="Nombre" placeholder="Nombre tarea" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="Descripcion" cols="30" rows="10" class="form-control"
+                                    placeholder="Descripcion tarea"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block text-center">
+                                Guardar tarea
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+            <div class="card my-4 " id="resultadoTarea">
+                <div class="card-body">
+                    <ul  id="container"></ul>
+                </div>
+            </div>
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <td>Id</td>
+                            <td>Nombre</td>
+                            <td>Descripcion</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tareas"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="app.js">
+
+    </script>
+
+</body>
+
+</html>

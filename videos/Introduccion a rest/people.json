@@ -1,0 +1,8 @@
+{
+    "PeoplesJson" : [
+        { "Name": "Frank", "Nickname": "Fray" },          
+        { "Name": "Camilo", "Nickname": "Milo" },
+        { "Name": "Alejandro", "Nickname": "muñe" },
+        { "Name": "Edison", "Nickname": "edikeys" }
+    ]
+}

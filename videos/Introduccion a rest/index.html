@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video 2 Json</title>
+</head>
+
+<body>
+    <ul id="ArrayPeople"></ul>
+    <script>
+        var People = {
+            "Name": "Frank",
+            "LastName": "Valencia",            // forma de declarar un objeto
+            "Age": 26,
+            "Nickname": "Milo",
+
+            // funcion solo en JavaScript NO en JSON por ser funcion 
+            Hello: function () {
+                return 'hello I am Milo'
+            }
+        };
+        console.log(People.Hello);            // Forma de mostrarlo por consola 
+        //--------------------------------------------------------------------------------------------------------------------------
+        //      SIN LA FUNCION 
+        var People2 = {
+            "Name": "Frank",
+            "LastName": "Valencia",            // forma de declarar un objeto como un JSON 
+            "Age": 26,
+            "Nickname": "Milo",
+        };
+        console.log(People2.Name);            // Forma de mostrarlo por consola 
+        //--------------------------------------------------------------------------------------------------------------------------
+        //      array de objetos
+
+        var ArrayPeople = [
+            { Name: "Frank", Nickname: "Fray" },             // array de objetos
+            { Name: "Camilo", Nickname: "Milo" },
+            { Name: "Alejandro", Nickname: "muñe" },
+            { Name: "Edison", Nickname: "edikeys" }
+        ];
+
+        var exit = '', exit1 = '';
+        for (var i = 0; i < ArrayPeople.length; i++) {
+            //  console.log(ArrayPeople[i]);               // Forma de mostrarlo por consola TENER EN CUENTA EL INDICE[] 
+            exit += '<li>' + ArrayPeople[i].Name + ' es ' + ArrayPeople[i].Nickname + '</li>'
+            exit1 += `<li>${ArrayPeople[i].Name} you nickname is ${ArrayPeople[i].Nickname}</li>` // otra forma de mostrarlo
+        }
+
+        //document.getElementById('ArrayPeople').innerHTML = exit;    // mostrandolo por pantalla
+
+        document.getElementById('ArrayPeople').innerHTML = exit1;    // mostrandolo por pantalla 
+/*
+        //--------------------------------------------------------------------------------------------------------------------------
+        //      mostrando un json
+
+        // codigo tomado de w3school
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var resp = JSON.parse(xhttp.responseText);
+                var peoples = resp.peoples;
+
+                var exit = '';
+                for (var i = 0; i < ArrayPeople.length; i++) {
+                    exit += `<li>${ArrayPeople[i].Name} you nickname is ${ArrayPeople[i].Nickname}</li>`
+                }
+
+                document.getElementById('ArrayPeople').innerHTML = exit;    // mostrandolo por pantalla 
+            }
+        };
+        */
+        xhttp.open("GET", "filename", true);
+        xhttp.send();
+     
+    </script>
+</body>
+
+</html>

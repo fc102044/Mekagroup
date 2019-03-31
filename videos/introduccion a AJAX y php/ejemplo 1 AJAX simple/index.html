@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo1 AJAX simple</title>
+</head>
+<body>
+    <button onclick="enviarPeticion()">
+       Envia Una peticion AJAX
+    </button>
+    <h1 id="idh1"></h1>
+<script>
+    function enviarPeticion(){
+      var objeto = new XMLHttpRequest(); // forma de pedir datos a back end
+      objeto.open('POST', 'backend.php',true); // pedirle algo al servidor get para consultar post para enviar 
+      objeto.setRequestHeader('Content-Type','application/x-www-form-urlencoded');// tipo de datos que solicito
+      objeto.onreadystatechange = function(){
+          //console.log(objeto.responseText);// forma de escuchar en formato texto la respuesta del servidor
+        document.getElementById('idh1').innerHTML = objeto.responseText;// incertandolo en un h1
+      }
+      //objeto.send(); //envio peticion
+      objeto.send('nombre=frank'); //cuando se utiliza el post se pone lo que se envia aca  
+
+
+    }
+</script>
+</body>
+</html>
